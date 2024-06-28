@@ -142,7 +142,7 @@
 
 # Common Pin Out Diagrams
 
-![[JTAG Connector PinOut Diagram 1.png]]
+![JTAG Connector PinOut Diagram 1](https://github.com/0xSlyfox/Cheat-Sheets/assets/106607439/f109c737-9151-48ee-acc1-61b3a180e1bc)
 
 # Bypassing a Pull-Down Resistor on a UART Pin
 
@@ -171,9 +171,6 @@ Copy code
     - Configure the UART pin as an output on your microcontroller.
     - Set the output level of the pin to high (logic high).
 
-python
-
-Copy code
 
 `# Example for setting a GPIO pin high on a Raspberry Pi import RPi.GPIO as GPIO  def setUartPinHigh():     # Assume the UART pin is connected to GPIO pin 17 (BCM numbering)     uartPin = 17          # Set up the GPIO pin     GPIO.setmode(GPIO.BCM)  # Use BCM pin numbering     GPIO.setup(uartPin, GPIO.OUT)          # Set the pin high     GPIO.output(uartPin, GPIO.HIGH)  # Call the function to set the pin high setUartPinHigh()`
 
